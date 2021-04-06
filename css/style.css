@@ -426,7 +426,8 @@ footer .cursor {
 }
 
 .perk h4 {
-  background: linear-gradient(113.01deg, #55A5EF 0%, #FC5D95 50%, #9272FF 100%);
+  background-color: #f977ce;
+  background-image: linear-gradient(315deg, #f977ce 0%, #c373f2 74%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-attachment: fixed;
@@ -690,6 +691,20 @@ section {
 
 .award img {
   margin-bottom: 32px;
+}
+
+.help {
+  background: radial-gradient(131.17% 131.17% at 120.05% -19.65%, #8BE8CB 0%, rgba(139, 232, 203, 0) 100%), -webkit-gradient(linear, left top, left bottom, from(rgba(253, 62, 129, 0.4)), to(rgba(118, 229, 252, 0.4))), radial-gradient(102.28% 102.28% at 3.28% 0%, #9272FF 0%, #2C1C64 100%);
+  background: radial-gradient(131.17% 131.17% at 120.05% -19.65%, #8BE8CB 0%, rgba(139, 232, 203, 0) 100%), linear-gradient(180deg, rgba(253, 62, 129, 0.4) 0%, rgba(118, 229, 252, 0.4) 100%), radial-gradient(102.28% 102.28% at 3.28% 0%, #9272FF 0%, #2C1C64 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .course-header .info {
