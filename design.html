@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevF - Aprende tecnología</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+  </head>
+  <body>
+    <header>
+      <nav class="solid">
+        <div class="left">
+          <a href="#">
+            <svg id="home" class="logo" width="100%" height="100%" viewBox="0 0 800 185" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+              <g id="full">
+                <g id="rectangles">
+                  <rect id="E" x="621.8" y="132.6" width="45.7" height="45.7"/>
+                  <rect id="D" x="684.9" y="132.6" width="45.7" height="45.7"/>
+                  <rect id="C" x="748" y="132.6" width="45.7" height="45.7"/>
+                  <rect id="B" x="748" y="69.5" width="45.7" height="45.7"/>
+                  <rect id="A" x="684.9" y="6.3" width="45.7" height="45.7"/>
+                </g>
+                <g id="letters">
+                  <path id="F" d="M667.5,52.1L667.5,6.3L558.7,6.3L558.7,178.3L604.4,178.3L604.4,115.2L667.5,115.2L667.5,69.5L604.4,69.5L604.4,52.1L667.5,52.1Z" style="fill-rule:nonzero;"/>
+                  <path id="DOT" d="M518.4,178.5C505.6,178.5 495.3,168.5 495.3,155.7C495.3,143.1 505.6,132.6 518.4,132.6C531,132.6 541.5,143.1 541.5,155.7C541.5,168.5 531,178.5 518.4,178.5Z" style="fill-rule:nonzero;"/>
+                  <path id="V" d="M393.4,178.3L329,6.6L386,6.6L423.7,115.2L461.5,6.6L518.5,6.6L453.8,178.3L393.4,178.3Z" style="fill-rule:nonzero;"/>
+                  <path id="E1" serif:id="E" d="M225.7,52L225.7,69.5L306.2,69.5L306.2,115.2L225.7,115.2L225.7,132.6L306.2,132.6L306.2,178.3L180,178.3L180,6.3L306.2,6.3L306.2,52L225.7,52Z" style="fill-rule:nonzero;"/>
+                  <path id="D1" serif:id="D" d="M137.4,153.2C120.3,170 100.2,178.2 76.7,178.2L6.3,178.2L6.3,6.1L76.7,6.1C100.2,6.1 120.3,14.5 137.4,31.4C154.2,48.2 162.7,68.6 162.7,92.1C162.6,115.8 154.2,136.2 137.4,153.2ZM115.1,92.6C115.1,82.2 111.4,72.8 103.8,64.6C96.8,56.4 86.7,52.1 74.9,52.1L53.9,52.1L53.9,132.6L60.6,132.6C75.8,132.6 90.8,133.2 103.3,120.7C111.8,112.4 115.1,102.4 115.1,92.6Z" style="fill-rule:nonzero;"/>
+                </g>
+              </g>
+            </svg>
+          </a>
+          <a href="#cursos" class="link">Programas</a>
+          <a href="" class="link">¿Qué es devf?</a>
+        </div>
+        <div class="right">
+          <a href="#" class="btn alt"> Ingresa a campus </a>
+          <a href="#" class="btn cta"> Inscribete ahora </a>
+        </div>
+      </nav>
+
+      <div class="course-header design">
+        <div class="container info">
+          <div class="row">
+            <div class="col">
+              <h1>Product Design</h1>
+              <p>
+                Analiza y entiende problemas complejos, diseña experiencias increibles e interfaces modernas que ayuden al usuario lograr sus objetivos. 
+              </p>
+              <p class="basics">
+                <i data-feather="users"></i>
+                <span>Para: Cualquier persona</span>
+              </p>
+              <p class="basics">
+                <i data-feather="log-out"></i>
+                <span>Perfil de egreso: Product Designer Jr.</span>
+              </p>
+              <label for="country">Elige el país desde el que te conectas</label>
+              <select name="country" id="" class="select-dark">
+                <option disabled>¿Desde dónde te conectas?</option>
+                <option value="MX" selected>México</option>
+                <option disabled>------------</option>
+                <option value="AR">Argentina</option>
+                <option value="CL">Chile</option>
+                <option value="CO">Colombia</option>
+                <option value="CR">Costa Rica</option>
+                <option value="EC">Ecuador</option>
+                <option value="ES">El Salvador</option>
+                <option value="US">Estados Unidos</option>
+                <option value="GT">Guatemala</option>
+                <option value="PA">Panamá</option>
+                <option value="PE">Perú</option>
+                <option value="DO">República Dominicana</option>
+                <option disabled>------------</option>
+                <option value="EU">Unión Europea</option>
+                <option value="RW">Resto del mundo</option>
+              </select>
+            </div>
+            <div class="col">
+              <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZgewiFcvChw?start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="salary">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <h6>
+                  El salario promedio de un desarrollador full stack en latinoamérica es de $1,400 USD al mes
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="details">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="sticky-banner">
+              <img src="img/photos/support.png" alt="">
+              <h4>¿Aún no lo tienes claro?</h4>
+              <p>Envíanos un mensaje y un asesor te ayudará a resolver todas las dudas que tengas.</p>
+              <a href="#" class="btn light"> Contactar </a>
+            </div>
+          </div>
+          <div class="col-md-8">
+
+            <!--PRICING ------------------------------------------------------------------------------------------->
+            <div class="pricing">
+              <div class="product">
+                <div class="top">
+                  <h4>Intro</h4>
+                  <h6>$8,000</h6>
+                  <p>
+                    8 semanas
+                    <br>
+                    48 horas de clase
+                  </p>
+                  <ul>
+                    <li>Acceso a campus</li>
+                    <li>Diploma electrónico</li>
+                    <li>Hacker club</li>
+                    <li>Hackatoncito</li>
+                    <li>Meetups</li>
+                    <li>Taller de CV</li>
+                  </ul>
+                </div>
+                <div class="bottom">
+                  <a href="" class="btn cta">Inscríbete ahora</a>
+                </div>
+              </div>
+              <div class="product">
+                <div class="top">
+                  <h4>Professional</h4>
+                  <h6>$24,000</h6>
+                  <p>
+                    8 semanas
+                    <br>
+                    48 horas de clase
+                  </p>
+                  <ul>
+                    <li>Acceso a campus</li>
+                    <li>Diploma certificado en blockchain</li>
+                    <li>Hacker club</li>
+                    <li>Hackatoncito</li>
+                    <li>Design sprint</li>
+                    <li>Meetups</li>
+                    <li>Taller de CV</li>
+                    <li>Portafolio</li>
+                    <li>Power Skills</li>
+                  </ul>
+                </div>
+                <div class="bottom">
+                  <a href="" class="btn cta">Inscríbete ahora</a>
+                </div>
+              </div>
+              <div class="product">
+                <div class="top">
+                  <h4>Master</h4>
+                  <h6>$32,000</h6>
+                  <p>
+                    8 semanas
+                    <br>
+                    48 horas de clase
+                  </p>
+                  <ul>
+                    <li>Acceso a campus</li>
+                    <li>Diploma certificado en blockchain</li>
+                    <li>Hacker club</li>
+                    <li>Hackatoncito</li>
+                    <li>Design sprint</li>
+                    <li>Meetups</li>
+                    <li>Taller de CV </li>
+                    <li>Portafolio</li>
+                    <li>Power Skills</li>
+                    <li>Acceso a comunidades</li>
+                    <li>Mentorias 1:1</li>
+                    <li>Mockup interviews</li>
+                  </ul>
+                </div>
+                <div class="bottom">
+                  <a href="" class="btn cta">Inscríbete ahora</a>
+                </div>
+              </div>
+            </div>
+
+            <!--RATINGS ------------------------------------------------------------------------------------------->
+            <section class="section-small">
+              <h3>Opiniones</h3>
+              <div class="card-list">
+                <div class="review">
+                  <div class="student">
+                    <div class="photo">
+                      <img src="data:image/jpeg;base64,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" alt="">
+                    </div>
+                    <div class="info">
+                      <h6>Student Name</h6>
+                      <p>CEO @ Google</p>
+                    </div>
+                  </div>
+                  <div class="quote">
+                    Trabajamos con DEV.F porque aporta talento a la comunidad tech y cumple un rol fundamental como catalizador de ideas y colaboración entre desarrolladores de muy distintos perfiles.
+                  </div>
+                  <div class="generation">
+                    Generación 6
+                  </div>
+                </div>
+                <div class="review">
+                  <div class="student">
+                    <div class="photo">
+                      <img src="https://cdn.themedizine.com/2021/03/method-man-the-medizine.jpg" alt="">
+                    </div>
+                    <div class="info">
+                      <h6>Student Name</h6>
+                      <p>CEO @ Google</p>
+                    </div>
+                  </div>
+                  <div class="quote">
+                    Dev.f es un lugar de gente intensa, ñoña en el mejor sentido de la palabra, que les gusta tanto lo que hacen que siempre están buscando más, crecer más y hacer más, es un rush de conocimiento.
+                  </div>
+                  <div class="generation">
+                    Generación 6
+                  </div>
+                </div>
+                <div class="review">
+                  <div class="student">
+                    <div class="photo">
+                      <img src="data:image/jpeg;base64,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" alt="">
+                    </div>
+                    <div class="info">
+                      <h6>Student Name</h6>
+                      <p>CEO @ Google</p>
+                    </div>
+                  </div>
+                  <div class="quote">
+                    Trabajamos con DEV.F porque aporta talento a la comunidad tech y cumple un rol fundamental como catalizador de ideas y colaboración entre desarrolladores de muy distintos perfiles.
+                  </div>
+                  <div class="generation">
+                    Generación 6
+                  </div>
+                </div>
+                <div class="review">
+                  <div class="student">
+                    <div class="photo">
+                      <img src="https://cdn.themedizine.com/2021/03/method-man-the-medizine.jpg" alt="">
+                    </div>
+                    <div class="info">
+                      <h6>Student Name</h6>
+                      <p>CEO @ Google</p>
+                    </div>
+                  </div>
+                  <div class="quote">
+                    Dev.f es un lugar de gente intensa, ñoña en el mejor sentido de la palabra, que les gusta tanto lo que hacen que siempre están buscando más, crecer más y hacer más, es un rush de conocimiento.
+                  </div>
+                  <div class="generation">
+                    Generación 6
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!--TEMARIO ------------------------------------------------------------------------------------------->
+            <section class="section-small">
+              <h3>Temario</h3>
+              <div class="card-list">
+                <div class="module">
+                  <h5>UX</h5>
+                  <p class="weeks">8 semanas</p>
+                  <p>
+                    Entiende las bases del diseño de producto, completa un sprint de diseño, construye y prueba tu primer prototipo funcional.
+                  </p>
+                  <p class="courses">Se imparte en:</p>
+                  <span class="chirp intro">Intro</span>
+                  <span class="chirp professional">Professional</span>
+                  <span class="chirp master">Master</span>
+                </div>
+                <div class="module">
+                  <h5>Generación de valor</h5>
+                  <p class="weeks">4 semanas</p>
+                  <p>
+                    Diseña una estrategía de diseño para un servicio con base tecnológica, documenta los procesos clave y entiende como funciona un producto tecnológico.
+                  </p>
+                  <p class="courses">Se imparte en:</p>
+                  <span class="chirp intro">Intro</span>
+                  <span class="chirp professional">Professional</span>
+                  <span class="chirp master">Master</span>
+                </div>
+                <div class="module">
+                  <h5>Diseño visual</h5>
+                  <p class="weeks">4 semanas</p>
+                  <p>
+                    Comprende las bases del diseño visual y diseña la imagen de una organización.
+                  </p>
+                  <p class="courses">Se imparte en:</p>
+                  <span class="chirp intro">Intro</span>
+                  <span class="chirp professional">Professional</span>
+                  <span class="chirp master">Master</span>
+                </div>
+                <div class="module">
+                  <h5>UI I</h5>
+                  <p class="weeks">4 semanas</p>
+                  <p>
+                    Adéntrate en la metodología de diseño atómico y diseña los mockups de alta fidelidad de un producto complejo.
+                  </p>
+                  <p class="courses">Se imparte en:</p>
+                  <span class="chirp intro">Intro</span>
+                  <span class="chirp professional">Professional</span>
+                  <span class="chirp master">Master</span>
+                </div>
+                <div class="module">
+                  <h5>UI II</h5>
+                  <p class="weeks">4 semanas</p>
+                  <p>
+                    Explora técnicas de diseño modernas y genera prototipos y mockups interactivos de alta fidelidad.
+                  </p>
+                  <p class="courses">Se imparte en:</p>
+                  <span class="chirp intro">Intro</span>
+                  <span class="chirp professional">Professional</span>
+                  <span class="chirp master">Master</span>
+                </div>
+                <div class="module">
+                  <h5>Maquetación</h5>
+                  <p class="weeks">8 semanas</p>
+                  <p>
+                    Comprende las implicaciones de construir las interfaces que has diseñado en un entorno de desarrollo real.
+                  </p>
+                  <p class="courses">Se imparte en:</p>
+                  <span class="chirp intro">Intro</span>
+                  <span class="chirp professional">Professional</span>
+                  <span class="chirp master">Master</span>
+                </div>
+                <div class="module">
+                  <h5>Medición y análisis</h5>
+                  <p class="weeks">4 semanas</p>
+                  <p>
+                    Realiza mediciones de usabilidad de los productos que has construido hasta la fecha, compara herramientas y toma decisiones.
+                  </p>
+                  <p class="courses">Se imparte en:</p>
+                  <span class="chirp intro">Intro</span>
+                  <span class="chirp professional">Professional</span>
+                  <span class="chirp master">Master</span>
+                </div>
+                <div class="module">
+                  <h5>Proyecto concentrador</h5>
+                  <p class="weeks">4 semanas</p>
+                  <p>
+                    Analiza un problema real, aplica las técnicas aprendida durante todos los módulos y entrega valor a partir del diseño.
+                  </p>
+                  <p class="courses">Se imparte en:</p>
+                  <span class="chirp intro">Intro</span>
+                  <span class="chirp professional">Professional</span>
+                  <span class="chirp master">Master</span>
+                </div>
+                <div class="module" style="background: linear-gradient(118.74deg, #DA5EB0 0.69%, #FAB043 100%); color: white">
+                  <h5>Descarga el temario</h5>
+                  <p>
+                    Si necesitas revisar a profundidad los temas vistos en cada uno de los módulos de nuestros programas, solicita el temario detallado directo en tu correo electrónico.
+                  </p>
+                  <img src="img/icons/download.png" alt="">
+                </div>
+              </div>
+            </section>
+
+            <!--FAQ ------------------------------------------------------------------------------------------->
+            <section class="section-small">
+              <h3>Preguntas frecuentes <br><br></h3>
+              <div class="faq">
+                <h5 class="question">¿Qué beneficios me otorga devf?</h5>
+                <p class="answer">
+                  Tu inscripción incluye el acceso a todas las sesiones en vivo de tu curso, material complementario y una cantidad enorme de talleres y redes de mentoreo dentro de la comunidad más grande de Latinoamérica
+                </p>
+              </div>
+              <div class="faq">
+                <h5 class="question">¿Qué obtengo al concluir mi curso?</h5>
+                <p class="answer">
+                  Recibirás un diploma de terminación de tu programa con certificación en blockchain* que lo hace completamente inalterable e itransferible. Además, al ser una metodología de enseñanse practica, tendrás una gran cantidad de proyectos que anexar a tu portafolios.
+                </p>
+                <p class="small">
+                  * Aplica para Professional y Master
+                </p>
+              </div>
+              <div class="faq">
+                <h5 class="question">¿Necesito conocimientos previos?</h5>
+                <p class="answer">
+                  Todos nuestros cursos inician a nivel introductorio y con un lenguaje entendible para todo mundo, si por el contrario ya tienes formación previa y consideras que puedes integrarte en un nivel más avanzado, contacta con un asesor y armaremos un plan perfecto para ti.
+                </p>
+              </div>
+              <div class="faq">
+                <h5 class="question">¿Cuál es el formato de las clases?</h5>
+                <p class="answer">
+                  Todas las clases son en vivo mediante Zoom de 18:30 a 21:30 hora del centro de México. De dos a cinco días por semana, dependiendo del programa en que estés inscrito.
+                </p>
+              </div>
+              <div class="faq">
+                <h5 class="question">¿Qué necesito para tomar la clase?</h5>
+                <p class="answer">
+                  Un equipo de computo con acceso a internet que soporte la última versión de Google Chrome y pueda realizar video llamadas.
+                </p>
+              </div>
+              <div class="faq">
+                <h5 class="question">¿Qué pasa si no puedo asistir a una clase?</h5>
+                <p class="answer">
+                  En campus tenemos videos de los temas vistos en nuestras clases en vivo, así que si en algún momento te pierdes una clase, podrás sin ningún problema retomar el contenido donde te quedaste.
+                </p>
+              </div>
+            </section>
+
+            <!--VIDEOS ------------------------------------------------------------------------------------------->
+            <section class="section-small">
+              <h3>Más videos</h3>
+              <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/-KTBkaOy4aA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md">
+            <img src="img/logo/logo-devf-white.svg" alt="" class="logo">
+            <p class="moto">
+              hackeando latinoamérica desde 2014<span class="cursor">_</span>
+            </p>
+          </div>
+          <div class="col-md">
+            <h6>Conecta con nosotros</h6>
+            <ul>
+              <li><a href="">Facebook</a></li>
+              <li><a href="">Twitter</a></li>
+              <li><a href="">Instagram</a></li>
+              <li><a href="">Github</a></li>
+              <li><a href="">Spotify</a></li>
+              <li><a href="">Youtube</a></li>
+              <li><a href="">Escríbenos por whatsapp</a></li>
+              <li><a href="">Mándanos un correo</a></li>
+            </ul>
+          </div>
+          <div class="col-md">
+            <h6>Sitio</h6>
+            <ul>
+              <li><a href="">Inicio</a></li>
+              <li><a href="">¿Qué es devf?</a></li>
+              <li><a href="">Equipo</a></li>
+              <li><a href="">Aviso de privacidad</a></li>
+              <li><a href="">Términos y condiciones</a></li>
+            </ul>
+          </div>
+          <div class="col-md">
+            <h6>Programas</h6>
+            <ul>
+              <li><a href="">Code</a></li>
+              <li><a href="">Product design</a></li>
+              <li><a href="">Data science</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row epilogue">
+          <p>
+            Av. Álvaro Obregón 168, Roma Norte, C.P. 06700, Ciudad de México. Tel. 55 3670 1339
+          </p>
+          <p>
+            Dev.f ofrece una solución innovadora a la inclusión educativa con programas EdTech que ayudan a las personas a convertirse en desarrolladores de software y a obtener habilidades tecnológicas para así conseguir oportunidades laborales de alta calidad de manera ágil y accesible.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      feather.replace()
+    </script>
+
+  </body>
+</html>

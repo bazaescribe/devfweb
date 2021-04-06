@@ -1,0 +1,8 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="live">
+<rect width="100" height="100" fill="white"/>
+<circle id="circlebig" opacity="0.4" cx="49.9999" cy="50" r="33.2491" fill="#F45B69"/>
+<circle id="circlemid" opacity="0.4" cx="49.9999" cy="50" r="21.048" fill="#F45B69"/>
+<circle id="circlesmall" cx="50" cy="50" r="9.23945" fill="white"/>
+</g>
+</svg>

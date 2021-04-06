@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 800 185" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="logo">
+        <g id="rectangles">
+            <rect id="E" x="621.8" y="132.6" width="45.7" height="45.7"/>
+            <rect id="D" x="684.9" y="132.6" width="45.7" height="45.7"/>
+            <rect id="C" x="748" y="132.6" width="45.7" height="45.7"/>
+            <rect id="B" x="748" y="69.5" width="45.7" height="45.7"/>
+            <rect id="A" x="684.9" y="6.3" width="45.7" height="45.7"/>
+        </g>
+        <g id="letters">
+            <path id="F" d="M667.5,52.1L667.5,6.3L558.7,6.3L558.7,178.3L604.4,178.3L604.4,115.2L667.5,115.2L667.5,69.5L604.4,69.5L604.4,52.1L667.5,52.1Z" style="fill-rule:nonzero;"/>
+            <path id="DOT" d="M518.4,178.5C505.6,178.5 495.3,168.5 495.3,155.7C495.3,143.1 505.6,132.6 518.4,132.6C531,132.6 541.5,143.1 541.5,155.7C541.5,168.5 531,178.5 518.4,178.5Z" style="fill-rule:nonzero;"/>
+            <path id="V" d="M393.4,178.3L329,6.6L386,6.6L423.7,115.2L461.5,6.6L518.5,6.6L453.8,178.3L393.4,178.3Z" style="fill-rule:nonzero;"/>
+            <path id="E1" serif:id="E" d="M225.7,52L225.7,69.5L306.2,69.5L306.2,115.2L225.7,115.2L225.7,132.6L306.2,132.6L306.2,178.3L180,178.3L180,6.3L306.2,6.3L306.2,52L225.7,52Z" style="fill-rule:nonzero;"/>
+            <path id="D1" serif:id="D" d="M137.4,153.2C120.3,170 100.2,178.2 76.7,178.2L6.3,178.2L6.3,6.1L76.7,6.1C100.2,6.1 120.3,14.5 137.4,31.4C154.2,48.2 162.7,68.6 162.7,92.1C162.6,115.8 154.2,136.2 137.4,153.2ZM115.1,92.6C115.1,82.2 111.4,72.8 103.8,64.6C96.8,56.4 86.7,52.1 74.9,52.1L53.9,52.1L53.9,132.6L60.6,132.6C75.8,132.6 90.8,133.2 103.3,120.7C111.8,112.4 115.1,102.4 115.1,92.6Z" style="fill-rule:nonzero;"/>
+        </g>
+    </g>
+</svg>

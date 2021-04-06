@@ -1,0 +1,670 @@
+// IMPORTS AN VARIABLES = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+  
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap')
+
+$font-mono: 'Space Mono'
+  
+$font-stack: sans-serif
+
+$hackeranda: #9272FF
+$plasma: #5136AD
+$void: #2C1C64
+$nebula: #FD3E81
+$pluto: #76E5FC
+
+$gray-1: #0C0C0C
+$gray-2: #242433 
+$gray-3: #383851
+$gray-4: #646480
+$gray-5: #A2A2B4
+$gray-6: #DBDBDF
+$gray-7: #FFFFFF
+
+$success: #037971
+$warning: #F9BA3F
+$danger: #F45B69
+
+$focus: #FFB4A2
+$mint: #8BE8CB
+$info: #3164AC
+
+$intro: #ff8fcf
+$professional: #0dc2ba
+$master: #037A90
+
+$unit-1: 16px
+$unit-2: 32px
+$unit-3: 64px
+$unit-4: 80px
+$unit-5: 120px
+$unit-6: 160px
+$unit-7: 220px
+
+$shadow-resting: 0px 2px 6px rgba(0, 0, 0, 0.08)
+$shadow-floating: 0px 4px 12px rgba(0, 0, 0, 0.24)
+$shadow-selected: 0px 6px 24px rgba(0, 0, 0, 0.16)
+$shadow-levitating: 0px 4px 12px rgba(0, 0, 0, 0.24)
+$shadow-ethereal: 0px 6px 32px rgba(0, 0, 0, 0.1)
+
+$gradient-background-light-right: linear-gradient(186.75deg, #FFFFFF 15.73%, #FAFAFF 15.74%, #FFFFFF 81.18%);
+$gradient-background-light-left: linear-gradient(173.25deg, #FFFFFF 15.73%, #FAFAFF 15.74%, #FFFFFF 81.18%);
+
+::-moz-selection
+    color: white;
+    background: black;
+
+::selection
+    color: white;
+    background: black;
+
+
+// BASIC STYLES = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+
+body
+  font: 100% $font-stack
+  color: $gray-1
+  margin: 0px
+
+h1
+  font-weight: 800;
+  font-size: 96px;
+  line-height: 140.62%;
+
+h2
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 83px;
+
+h3
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 62px;
+
+h4
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 42px;
+
+h5
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+
+h6
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+
+.text-light
+  color: $gray-7
+
+.bg-light-right
+  background-image: $gradient-background-light-right 
+
+.bg-gray-1
+  background: $gray-1
+  @extend .text-light
+
+.bg-gray-2
+  background: $gray-2
+  @extend .text-light
+
+.bg-gray-3
+  background: $gray-3
+  @extend .text-light
+
+.center
+  text-align: center
+
+.bg-code
+  background: radial-gradient(100% 254.85% at 100% 100%, rgba(0, 0, 0, 0.52) 0%, rgba(0, 0, 0, 0) 100%), #9272FF
+  @extend .text-light
+
+.bg-design
+  background: radial-gradient(100% 254.85% at 100% 100%, rgba(0, 0, 0, 0.52) 0%, rgba(0, 0, 0, 0) 100%), #FF6CF0
+  @extend .text-light
+
+.bg-data
+  background: radial-gradient(100% 254.85% at 100% 100%, rgba(0, 0, 0, 0.52) 0%, rgba(0, 0, 0, 0) 100%), #6D9FFF
+  @extend .text-light
+
+// CONTROLS = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+
+.btn
+  padding: 12px 24px
+  font-size: 12px
+  text-transform: uppercase
+  font-weight: 600
+  border: none
+  border-radius: 0px
+  transition: 500ms ease-out all
+
+.cta  
+  background: $gray-1
+  color: white
+  border: 2px solid $gray-1
+  &:hover
+    box-shadow: -4px 4px 12px rgba(242, 163, 103, 0.5), 4px -4px 12px rgba(234, 24, 109, 0.3), -4px -4px 12px rgba(107, 45, 180, 0.3), 4px 4px 12px rgba(146, 114, 255, 0.3)
+    color: white
+    transform: translateY(-4px)
+  &:focus
+    transform: translateY(-2px)
+
+.light  
+  background: $gray-7
+  color: $gray-1
+  border: 2px solid $gray-7
+  &:hover
+    box-shadow: -4px 4px 12px rgba(242, 163, 103, 0.5), 4px -4px 12px rgba(234, 24, 109, 0.3), -4px -4px 12px rgba(107, 45, 180, 0.3), 4px 4px 12px rgba(146, 114, 255, 0.3)
+    transform: translateY(-4px)
+  &:focus
+    transform: translateY(-2px)
+
+.alt
+  box-sizing: border-box
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  border: 2px solid $gray-1
+  margin: 10px
+  &:hover
+    background: $hackeranda
+    color: $gray-7
+
+.ghost
+  box-sizing: border-box
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  border: 2px solid $gray-7
+  margin: 10px
+  color: $gray-7
+  &:hover
+    background: $gray-7
+    color: $gray-1
+
+.colored
+  background: $nebula
+  &:hover
+    color: white
+
+.menu-item
+  box-sizing: border-box
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  border: 2px solid rgba(0,0,0,0)
+  margin: 10px
+  margin-left: 4px
+  margin-right: 4px
+  border-radius: 16px
+  &:hover
+    box-shadow: $shadow-floating
+    background: $gray-7
+
+.chirp
+  background: $gray-1
+  color: $gray-7
+  padding: 8px 12px
+  font-size: 12px
+  border-radius: 24px 24px 24px 0px
+
+select
+  padding: 12px 16px
+  border-radius: 4px
+  -moz-appearance: none
+  -webkit-appearance: none
+  appearance: none
+
+.select-dark
+  background: rgba(0, 0, 0, 0.3)
+  border: 0px solid $gray-3
+  color: $gray-6
+  background-image: url('../img/icons/chevron-down.png')
+  background-position-x: 95%
+  background-position-y: 50%
+  background-repeat: no-repeat
+
+// NAVIGATION = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+    
+nav
+  a
+    text-decoration: none
+  padding: 8px 32px
+  width: 100%
+  display: flex
+  justify-content: space-between
+  align-items: center
+  .logo
+    width: 120px
+    margin-right: 32px
+  .link
+    text-decoration: none
+    color: $gray-7
+    text-transform: uppercase
+    font-size: 14px
+    font-weight: 600
+    margin: 16px
+  svg
+    cursor: pointer
+  #home
+    #A, #B, #C, #D, #E
+      transition: 500ms ease all
+    &:hover
+      #A
+        fill: $hackeranda
+        transform: translateX(62px)
+      #B
+        fill: $plasma
+      #C
+        fill: $void
+      #D
+        transform: translateY(-62px)
+        fill: $nebula
+      #E
+        transform: translateX(62px)
+        fill: $pluto
+
+.transparent
+  #full
+    fill: $gray-7
+
+.solid
+  background: white
+  border-bottom: 1px solid $gray-6
+  .link
+    color: $gray-1
+    &:hover
+      color: $hackeranda
+
+// FOOTER = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+
+footer
+  background: $gray-1
+  color: $gray-7
+  padding: 40px
+  .logo
+    width: 140px
+    margin-bottom: 16px
+  ul
+    list-style-type: none;
+    padding: 0px
+    padding-top: 24px
+  li
+    margin-bottom: 12px
+  a
+    text-decoration: none
+    color: $gray-5
+    &:hover
+      background: linear-gradient(180deg, #80FF00 47.06%, #1AC8B3 55.61%, #3F6CE1 64.91%, #9527EC 73.27%, #FF006B 83.53%)
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+      background-attachment: fixed
+  .epilogue
+    color: $gray-3
+    margin-top: 48px
+    font-size: 14px
+  .moto
+    font-family: $font-mono
+  .cursor
+    animation: blinker 800ms ease-in-out infinite
+
+@keyframes blinker 
+  50% 
+    opacity: 0;
+
+
+// HEADER = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+
+.photo-list
+  display: flex
+  margin-top: 120px
+  margin-bottom: 32px
+  overflow: hidden;
+
+.photo-frame
+  box-shadow: $shadow-floating
+  border-radius: 8px
+  background: $void
+  width: 840px
+  aspect-ratio: 1.77/1
+  overflow: hidden
+  margin: 24px
+  img
+    height: 100%
+
+.point
+  text-align: center
+  padding: 0px 32px
+  img
+    margin-bottom: 16px
+
+
+// SECTIONS = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+
+.logo-list
+  background: linear-gradient(180deg, #F4F4F4 0%, rgba(255, 255, 255, 0) 100%)
+  margin-top: 160px
+  padding: 80px 0px
+  .col
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    img
+      margin: 12px
+
+.perk
+  width: 390px
+  padding: 24px
+  margin-right: 24px
+  margin-bottom: 24px
+  transition: 350ms ease all
+  box-shadow: $shadow-resting
+  border-radius: 4px
+  h4
+    background: linear-gradient(113.01deg, #55A5EF 0%, #FC5D95 50%, #9272FF 100%)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    background-attachment: fixed
+  img
+    margin-bottom: 32px
+  &:hover
+    box-shadow: $shadow-ethereal
+    transform: translateY(-2px)
+
+#live
+  svg
+    cursor: pointer
+  #circlebig, #circlemid, #circlesmall
+    transition: 1s ease all
+    transform-origin: center center
+  &:hover
+    #circlebig
+      fill: $hackeranda
+      transform: scale(0.7)
+    #circlemid
+      fill: $mint
+      transform: scale(1.6)
+
+#levelup
+  svg
+    cursor: pointer
+  #top, #mid, #bottom
+    transition: 1s ease all
+    transform-origin: center center
+  &:hover
+    #top
+      transform: translateY(-20px)
+    #bottom
+      transform: scale(0.6), translateY(40px)
+
+#gears
+  svg
+    cursor: pointer
+  #small, #big
+    transition: 1s ease all
+  #small
+    transform-origin: 66% 66%
+  #big
+    transform-origin: 40% 50%
+  &:hover
+    #small
+      transform: rotate(180deg)
+    #big
+      transform: rotate(-45deg)
+  
+#forward
+  svg
+    cursor: pointer
+  #dark2
+    fill: $hackeranda !important
+    transition: 1s ease all
+  #dark1
+    fill: $nebula
+    transition: 1s ease all
+  #light1
+    fill: $pluto
+    transition: 1s ease all
+    opacity: 0.5
+  &:hover
+    #dark2
+      transform: translateX(30px)
+      opacity: 0
+    #light1
+      transform: translateX(40px)
+      opacity: 1
+      
+.tile
+  box-shadow: $shadow-floating
+  background: red
+  margin: $unit-1
+  width: 600px
+
+.tile-big
+  @extend .tile
+  height: 520px
+
+.tile-auto
+  @extend .tile
+  aspect-ratio: 1
+
+.course
+  overflow: hidden
+  text-decoration: none
+  .info
+    padding: 40px
+    padding-bottom: 16px
+  .photo
+    text-align: center
+    img
+      transform: translateY(48px)
+      transition: 250ms ease-out all
+  &:hover
+    img
+      transform: translateY(40px)
+
+.course-link
+  text-decoration: none
+
+.code
+  background: $plasma
+  color: $gray-7
+  .highlight
+    color: $mint
+
+.design
+  background: #FD5D8A
+  color: $gray-7
+  .highlight
+    color: $gray-3
+
+.data
+  background: #4362CE
+  color: $gray-7
+  .highlight
+    color: $pluto
+
+section
+  padding: 160px 0px
+
+.section-small
+  padding-bottom: 160px
+  padding-top: 0px
+
+.first
+  margin-top: 120px
+
+.campus
+  h3, h5
+    margin: 80px 0px
+    background: linear-gradient(180deg, #FFFFFF 24.49%, #0C0C0C 91.16%);
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    background-attachment: fixed
+
+.sticky-image
+  position: -webkit-sticky
+  position: sticky
+  top: 120px
+  padding: 50px
+  font-size: 20px
+
+.logos-list
+  padding-top: 240px
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  img
+    margin-bottom: 24px
+
+.info-card
+  padding: 24px
+  margin-right: 24px
+  margin-bottom: 24px
+  transition: 350ms ease all
+  box-shadow: $shadow-resting
+  border-radius: 4px
+  &:hover
+    box-shadow: $shadow-ethereal
+    transform: translateY(-2px)
+
+.award
+  @extend .info-card
+  img
+    margin-bottom: 32px
+
+// COURSE HEADER = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+
+.course-header
+  .info
+    padding: 120px 0px
+  .salary
+    background: rgba(0, 0, 0, 0.2)
+    padding-top: 12px
+    padding-bottom: 6px
+    color: white
+  .video
+    background: $hackeranda
+    border-radius: 8px
+    overflow: hidden
+    box-shadow: $shadow-floating
+    iframe
+      width: 100%
+  label, select
+    display: block
+  label
+    font-size: 14px
+    margin-bottom: 12px
+    margin-top: 12px
+    color: rgba(255, 255, 255, 0.6)
+  .basics
+    display: flex
+    align-items: center
+    i
+      margin-right: 160px
+    span
+      padding-left: 16px
+
+// COURSE DETAILS = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+
+.details
+  padding: 80px 0px
+
+.sticky-banner
+  background: radial-gradient(131.17% 131.17% at 120.05% -19.65%, #8BE8CB 0%, rgba(139, 232, 203, 0) 100%), linear-gradient(180deg, rgba(253, 62, 129, 0.4) 0%, rgba(118, 229, 252, 0.4) 100%), radial-gradient(102.28% 102.28% at 3.28% 0%, #9272FF 0%, #2C1C64 100%)
+  color: $gray-7
+  position: -webkit-sticky
+  position: sticky
+  top: 32px
+  padding: 24px
+  font-size: 20px
+  box-shadow: $shadow-ethereal
+  width: 90%
+  border-radius: 8px
+  img
+    margin: 24px 0px
+  p
+    font-size: 14px
+
+.pricing
+  display: flex
+  margin-bottom: 160px
+
+.product
+  width: 300px
+  margin-right: 12px
+  min-height: 480px
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  ul
+    list-style-type: none;
+    padding: 0px
+    padding-top: 24px
+  li
+    min-height: 24px
+    background-image: url('../img/icons/check.png')
+    background-repeat: no-repeat
+    padding-top: 3px
+    padding-left: 32px
+    margin-bottom: 16px
+    color: $gray-5
+  .bottom
+    margin-top: 24px
+
+.card-list
+  display: flex
+  flex-wrap: wrap
+
+.module
+  @extend .info-card
+  width: 45%
+  .weeks
+    font-size: 14px
+    font-weight: 600
+    color: $hackeranda
+  .courses
+    font-size: 12px
+    color: $gray-4
+
+.review
+  @extend .info-card
+  width: 45%
+  .student
+    display: flex
+    align-items: center
+    margin-bottom: 16px
+  .photo
+    width: 48px
+    height: 48px
+    border-radius: 50%
+    background: green
+    margin-right: 16px
+    overflow: hidden
+    img
+      object-fit: fill
+  .info
+    h6
+      margin-bottom: 0px
+    p
+      color: $plasma
+      margin: 0px
+  .generation
+    font-size: 12px
+    color: $gray-5
+    margin-top: 16px
+
+.faq
+  @extend .info-card
+  margin-bottom: 32px
+  h5
+    background: linear-gradient(113.01deg, #55A5EF 0%, #FC5D95 50%, #9272FF 100%)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    background-attachment: fixed
+
+.intro
+  background: $intro
+
+.professional
+  background: $professional
+
+.master
+  background: $master
