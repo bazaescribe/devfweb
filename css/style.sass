@@ -1,10 +1,10 @@
 // IMPORTS AN VARIABLES = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
   
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;600;800&display=swap')
 
 $font-mono: 'Space Mono'
-  
-$font-stack: sans-serif
+$font-accent: 'Spartan'
 
 $hackeranda: #9272FF
 $plasma: #5136AD
@@ -57,41 +57,43 @@ $gradient-background-light-left: linear-gradient(173.25deg, #FFFFFF 15.73%, #FAF
     color: white;
     background: black;
 
+$breakpoints: (phone: 640px, tablet: 768px, desktop: 1024px) !default;
 
 // BASIC STYLES = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
 
 body
-  font: 100% $font-stack
+  font: $font-accent
   color: $gray-1
   margin: 0px
 
 h1
+  font: $font-accent
   font-weight: 800;
   font-size: 96px;
   line-height: 140.62%;
 
 h2
-  font-weight: bold;
+  font-weight: 800;
   font-size: 64px;
   line-height: 83px;
 
 h3
-  font-weight: bold;
+  font-weight: 800;
   font-size: 48px;
   line-height: 62px;
 
 h4
-  font-weight: bold;
+  font-weight: 800;
   font-size: 32px;
   line-height: 42px;
 
 h5
-  font-weight: bold;
+  font-weight: 800;
   font-size: 24px;
   line-height: 32px;
 
 h6
-  font-weight: bold;
+  font-weight: 800;
   font-size: 18px;
   line-height: 23px;
 
@@ -242,6 +244,8 @@ nav
     font-size: 14px
     font-weight: 600
     margin: 16px
+  .mobile
+    display: none
   svg
     cursor: pointer
   #home
@@ -261,6 +265,23 @@ nav
       #E
         transform: translateX(62px)
         fill: $pluto
+  @media only screen and (max-width: 880px)
+    flex-direction: column
+    .logo
+      margin: 24px auto
+    .right
+      display: none
+    .link
+      display: none
+    .mobile
+      display: flex
+      .mobile-shortcut
+        color: white
+        margin: 6px 20px
+        text-align: center
+        span
+          font-size: 12px
+          font-weight: 600
 
 .transparent
   #full
@@ -304,7 +325,8 @@ footer
   .moto
     font-family: $font-mono
   .cursor
-    animation: blinker 800ms ease-in-out infinite
+    animation: blinker 900ms ease-in-out infinite
+    color: $warning
 
 @keyframes blinker 
   50% 
@@ -341,7 +363,6 @@ footer
 
 .logo-list
   background: linear-gradient(180deg, #F4F4F4 0%, rgba(255, 255, 255, 0) 100%)
-  margin-top: 160px
   padding: 80px 0px
   .col
     display: flex
@@ -358,6 +379,7 @@ footer
   transition: 350ms ease all
   box-shadow: $shadow-resting
   border-radius: 4px
+  background: $gray-7
   h4
     background-color: #f977ce;
     background-image: linear-gradient(315deg, #f977ce 0%, #c373f2 74%);
@@ -392,9 +414,10 @@ footer
     transform-origin: center center
   &:hover
     #top
-      transform: translateY(-20px)
-    #bottom
-      transform: scale(0.6), translateY(40px)
+      transform: translateY(-16px)
+      fill: $success
+    #mid
+      transform: translateY(12px)
 
 #gears
   svg
@@ -446,23 +469,50 @@ footer
   @extend .tile
   aspect-ratio: 1
 
+.courses
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+
+.course-link
+  text-decoration: none
+  color: white
+  max-width: 50%
+  margin-bottom: 16px
+  @media only screen and (max-width: 1000px)
+    max-width: 620px !important
+  &:hover
+    color: white !important
+
 .course
+  @extend .info-card
   overflow: hidden
   text-decoration: none
-  .info
-    padding: 40px
-    padding-bottom: 16px
+  margin: 8px !important
+  padding: 32px !important
+  max-width: 100%
+  height: 100%
+  @media only screen and (max-width: 1000px)
+    margin: 0px !important
   .photo
     text-align: center
     img
       transform: translateY(48px)
       transition: 250ms ease-out all
+      width: 80%
   &:hover
     img
       transform: translateY(40px)
+  @media only screen and (max-width: 640px)
+    width: 100% !important
 
-.course-link
+.course-boring
+  @extend .info-card
+  overflow: hidden
   text-decoration: none
+  margin: 8px
+  background: red
+  padding: 32px !important
 
 .code
   background: $plasma
@@ -536,6 +586,10 @@ section
   display: flex
   align-items: center
   justify-content: center
+  padding: 32px
+  img
+    -webkit-transform: none
+    transform: none
 
 // COURSE HEADER = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
 

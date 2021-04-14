@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;600;800&display=swap");
 ::-moz-selection {
   color: white;
   background: black;
@@ -10,43 +11,44 @@
 }
 
 body {
-  font: 100% sans-serif;
+  font: "Spartan";
   color: #0C0C0C;
   margin: 0px;
 }
 
 h1 {
+  font: "Spartan";
   font-weight: 800;
   font-size: 96px;
   line-height: 140.62%;
 }
 
 h2 {
-  font-weight: bold;
+  font-weight: 800;
   font-size: 64px;
   line-height: 83px;
 }
 
 h3 {
-  font-weight: bold;
+  font-weight: 800;
   font-size: 48px;
   line-height: 62px;
 }
 
 h4 {
-  font-weight: bold;
+  font-weight: 800;
   font-size: 32px;
   line-height: 42px;
 }
 
 h5 {
-  font-weight: bold;
+  font-weight: 800;
   font-size: 24px;
   line-height: 32px;
 }
 
 h6 {
-  font-weight: bold;
+  font-weight: 800;
   font-size: 18px;
   line-height: 23px;
 }
@@ -245,6 +247,10 @@ nav .link {
   margin: 16px;
 }
 
+nav .mobile {
+  display: none;
+}
+
 nav svg {
   cursor: pointer;
 }
@@ -278,6 +284,38 @@ nav #home:hover #E {
   -webkit-transform: translateX(62px);
           transform: translateX(62px);
   fill: #76E5FC;
+}
+
+@media only screen and (max-width: 880px) {
+  nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  nav .logo {
+    margin: 24px auto;
+  }
+  nav .right {
+    display: none;
+  }
+  nav .link {
+    display: none;
+  }
+  nav .mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav .mobile .mobile-shortcut {
+    color: white;
+    margin: 6px 20px;
+    text-align: center;
+  }
+  nav .mobile .mobile-shortcut span {
+    font-size: 12px;
+    font-weight: 600;
+  }
 }
 
 .transparent #full {
@@ -342,8 +380,9 @@ footer .moto {
 }
 
 footer .cursor {
-  -webkit-animation: blinker 800ms ease-in-out infinite;
-          animation: blinker 800ms ease-in-out infinite;
+  -webkit-animation: blinker 900ms ease-in-out infinite;
+          animation: blinker 900ms ease-in-out infinite;
+  color: #F9BA3F;
 }
 
 @-webkit-keyframes blinker {
@@ -394,7 +433,6 @@ footer .cursor {
 .logo-list {
   background: -webkit-gradient(linear, left top, left bottom, from(#F4F4F4), to(rgba(255, 255, 255, 0)));
   background: linear-gradient(180deg, #F4F4F4 0%, rgba(255, 255, 255, 0) 100%);
-  margin-top: 160px;
   padding: 80px 0px;
 }
 
@@ -423,6 +461,7 @@ footer .cursor {
   -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
           box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
   border-radius: 4px;
+  background: #FFFFFF;
 }
 
 .perk h4 {
@@ -479,13 +518,14 @@ footer .cursor {
 }
 
 #levelup:hover #top {
-  -webkit-transform: translateY(-20px);
-          transform: translateY(-20px);
+  -webkit-transform: translateY(-16px);
+          transform: translateY(-16px);
+  fill: #037971;
 }
 
-#levelup:hover #bottom {
-  -webkit-transform: scale(0.6), translateY(40px);
-          transform: scale(0.6), translateY(40px);
+#levelup:hover #mid {
+  -webkit-transform: translateY(12px);
+          transform: translateY(12px);
 }
 
 #gears svg {
@@ -568,14 +608,47 @@ footer .cursor {
   aspect-ratio: 1;
 }
 
+.courses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.course-link {
+  text-decoration: none;
+  color: white;
+  max-width: 50%;
+  margin-bottom: 16px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .course-link {
+    max-width: 620px !important;
+  }
+}
+
+.course-link:hover {
+  color: white !important;
+}
+
 .course {
   overflow: hidden;
   text-decoration: none;
+  margin: 8px !important;
+  padding: 32px !important;
+  max-width: 100%;
+  height: 100%;
 }
 
-.course .info {
-  padding: 40px;
-  padding-bottom: 16px;
+@media only screen and (max-width: 1000px) {
+  .course {
+    margin: 0px !important;
+  }
 }
 
 .course .photo {
@@ -587,6 +660,7 @@ footer .cursor {
           transform: translateY(48px);
   -webkit-transition: 250ms ease-out all;
   transition: 250ms ease-out all;
+  width: 80%;
 }
 
 .course:hover img {
@@ -594,8 +668,18 @@ footer .cursor {
           transform: translateY(40px);
 }
 
-.course-link {
+@media only screen and (max-width: 640px) {
+  .course {
+    width: 100% !important;
+  }
+}
+
+.course-boring {
+  overflow: hidden;
   text-decoration: none;
+  margin: 8px;
+  background: red;
+  padding: 32px !important;
 }
 
 .code {
@@ -671,7 +755,7 @@ section {
   margin-bottom: 24px;
 }
 
-.info-card, .award, .module, .review, .faq {
+.info-card, .course, .course-boring, .award, .module, .review, .faq {
   padding: 24px;
   margin-right: 24px;
   margin-bottom: 24px;
@@ -682,7 +766,7 @@ section {
   border-radius: 4px;
 }
 
-.info-card:hover, .award:hover, .module:hover, .review:hover, .faq:hover {
+.info-card:hover, .course:hover, .course-boring:hover, .award:hover, .module:hover, .review:hover, .faq:hover {
   -webkit-box-shadow: 0px 6px 32px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 6px 32px rgba(0, 0, 0, 0.1);
   -webkit-transform: translateY(-2px);
@@ -705,6 +789,12 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 32px;
+}
+
+.help img {
+  -webkit-transform: none;
+  transform: none;
 }
 
 .course-header .info {

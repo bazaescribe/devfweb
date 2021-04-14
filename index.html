@@ -4,15 +4,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DevF - Aprende tecnología</title>
+  <title>dev.f - Aprende tecnología</title>
 
+  <link rel="icon" type="image/png" href="img/icons/favico.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
 
   <!-- NAVBAR -->
-  <header style="background-image: url('img/graphics/bg-gradient.png'); background-repeat: no-repeat; background-size: 100%; overflow: hidden;">
+  <header style="background-image: url('img/graphics/Vector.svg'); background-repeat: no-repeat; background-size: cover; overflow: hidden;">
     <nav class="transparent">
       <div class="left">
         <a href="#">
@@ -36,37 +39,48 @@
           </svg>
         </a>
         <a href="#cursos" class="link">Programas</a>
-        <a href="" class="link">¿Qué es devf?</a>
+        <a href="" class="link">¿Qué es dev.f?</a>
       </div>
       <div class="right">
         <a href="#" class="btn ghost"> Ingresa a campus </a>
         <a href="#" class="btn light"> Inscribete ahora </a>
       </div>
+      <div class="mobile">
+        <div class="mobile-shortcut">
+          <i data-feather="users"></i>
+          <span>Programas</span>
+        </div>
+        <div class="mobile-shortcut">
+          <i data-feather="users"></i>
+          <span>Nosotros</span>
+        </div>
+        <div class="mobile-shortcut">
+          <i data-feather="users"></i>
+          <span>Campus</span>
+        </div>
+        <div class="mobile-shortcut">
+          <i data-feather="users"></i>
+          <span>Inscripción</span>
+        </div>
+      </div>
     </nav>
-    
-    <div style="padding-top: 120px; display: flex; flex-wrap: nowrap; margin-left: -230px; margin-right: -230px; padding-bottom: 48px;" class="">
-      <div class="photo-frame">
-        <img src="img/photos/ss-dev.png" alt="">
-      </div>
-      <div class="photo-frame">
-        <img src="img/photos/ss-call.jpg" alt="">
-      </div>
-      <div class="photo-frame">
-        <img src="img/photos/ss-design.png" alt="">
-      </div>
-    </div>
-
     <div class="container">
       <div class="row">
-        <div class="col">
-          <h1>El superpoder de la tecnología</h1>
-          <h5>Capacítate en lo que más te apasiona con los conocimientos <br> necesarios para dar un salto en tu carrera</h6>
+        <div class="col" style="padding-top: 180px; text-align: center; color: white;">
+          <h2>Habilidades digitales para <br> construir un mejor futuro</h2>
+          <p>Únete a la comunidad más grande de educación tecnológica en latinoamérica y aprende los skills que la industria necesita</p>
           <a href="#cursos" class="btn cta"> Ver nuestros cursos en linea </a>
-          <a href="#" class="btn alt"> Contacta a un asesor </a>
+          <a href="#" class="btn ghost"> Contacta a un asesor </a>
         </div>
       </div>
     </div>
-
+    <div style="padding-top: 120px; text-align: center;">
+      <picture style="width: 100%;">
+        <source media="(max-width:650px)" srcset="img/photos/mobile.png" style="width: 100%">
+        <source media="(min-width:651px)" srcset="img/photos/screen.png">
+        <img src="img_orange_flowers.jpg" alt="Flowers" style="width:80%; margin-bottom: -120px;">
+      </picture>
+    </div>
   </header>
 
   <section id="logos" class="logo-list">
@@ -116,7 +130,7 @@
             </g>
           </svg>
           <h4>Mayor empleabilidad</h4>
-          <p>Los programas de devf se enfocan en las tecnologías más demandadas</p>
+          <p>Los programas de dev.f se enfocan en las tecnologías más demandadas</p>
         </div>
 
         <!--Mejores ingresos-->
@@ -153,73 +167,66 @@
     <div class="container section-break">
       <div class="center">
         <h2>Nuestros programas</h2>
-        <p>Ya sea que estés comenzando o quieras especializarte, en DevF tenemos un programa para ti</p>
+        <p>Ya sea que estés comenzando o quieras especializarte, en dev.f tenemos un programa para ti</p>
         <br>
         <br>
       </div>
-      <div class="row">
-        <div class="col">
-          <div style="display: flex; width: 100%;">
-            <a href="code.html" class="course-link">
-              <div class="tile-big course code">
-                <div class="info">
-                  <h3>CODE</h3>
-                  <p>Aprende a explotar las tecnologías de punta en el desarrollo web y construye productos increibles.</p>
-                  <p class="small highlight">Niveles disponibles</p>
-                  <span class="chirp intro">Intro</span>
-                  <span class="chirp professional">Professional</span>
-                  <span class="chirp master">Master</span>
-                </div>
-                <div class="photo">
-                  <img src="img/photos/code.png" alt="">
-                </div>
-              </div>
-            </a>
-            <a href="design.html" class="course-link">
-              <div class="tile-big course design">
-                <div class="info">
-                  <h3>PRODUCT DESIGN</h3>
-                  <p>Aprende a explotar las tecnologías de punta en el desarrollo web y construye productos increibles.</p>
-                  <p class="small highlight">Niveles disponibles</p>
-                  <span class="chirp intro">Intro</span>
-                  <span class="chirp professional">Professional</span>
-                  <span class="chirp master">Master</span>
-                </div>
-                <div class="photo">
-                  <img src="img/photos/design.png" alt="">
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div style="display: flex; width: 100%;">
-            <div class="tile-big course data">
-              <div class="info">
-                <h3>DATA SCIENCE</h3>
-                <p>Aprende a explotar las tecnologías de punta en el desarrollo web y construye productos increibles.</p>
-                <p class="small highlight">Niveles disponibles</p>
-                <span class="chirp intro">Intro</span>
-                <span class="chirp professional">Professional</span>
-                <span class="chirp master">Master</span>
-              </div>
-              <div class="photo">
-                <img src="img/photos/data.png" alt="">
-              </div>
+      <div class="courses">
+        <a href="code.html" class="course-link">
+          <div class="course code">
+            <div class="course-info">
+              <h3>Code</h3>
+              <p>Adéntrate al mundo del desarrollo de software, desarrolla productos con la tecnología más avanzada disponible.</p>
+              <p class="highlight">Niveles disponibles</p>
+              <span class="chirp">Intro</span>
+              <span class="chirp">Professional</span>
+              <span class="chirp">Master</span>
             </div>
-            <div class="tile-big help">
-              <div style="text-align: center;">
-                <img src="img/photos/support.png" alt="">
-                <h4>¿Aún no lo tienes claro?</h4>
-                <p>Envíanos un mensaje y un asesor te ayudará a resolver todas las dudas que tengas.</p>
-                <a href="#" class="btn light"> Contactar </a>
-              </div>
+            <div class="photo">
+              <img src="img/photos/code.png" alt="">
             </div>
           </div>
-        </div>
+        </a>
+        <a href="code.html" class="course-link">
+          <div class="course design">
+            <div class="course-info">
+              <h3>Product Design</h3>
+              <p>Soluciona problemas complejos a través del diseño, diseña experiencias increíbles e interfaces efectivas.</p>
+              <p class="highlight">Niveles disponibles</p>
+              <span class="chirp">Intro</span>
+              <span class="chirp">Professional</span>
+              <span class="chirp">Master</span>
+            </div>
+            <div class="photo">
+              <img src="img/photos/design.png" alt="">
+            </div>
+          </div>
+        </a>
+        <a href="code.html" class="course-link">
+          <div class="course data">
+            <div class="course-info">
+              <h3>Data</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo debitis tempore consequuntur dolor mollitia molestias perferendis</p>
+              <p class="highlight">Niveles disponibles</p>
+              <span class="chirp">Intro</span>
+              <span class="chirp">Professional</span>
+              <span class="chirp">Master</span>
+            </div>
+            <div class="photo">
+              <img src="img/photos/data.png" alt="">
+            </div>
+          </div>
+        </a>
+        <a href="design.html" class="course-link">
+          <div class="course help">
+            <div class="center">
+              <h3>¿Aún con dudas?</h3>
+              <p>Contáctate con nosotros y tan pronto como sea posible uno de nuestros asesores se comunicará contigo para ayudarte a resolver cualquier pregunta</p>
+            </div>
+          </div>
+        </a>
       </div>
+      
     </div>
   </section>
 
@@ -281,7 +288,7 @@
     <div class="container section-break">
       <div class="row">
         <div class="col center">
-          <h2>Premios y reconocimientos</h2>
+          <h2>Premios</h2>
           <p>Estamos orgullos de todo lo que estamos haciendo por cambiar la industria Tech en nuestra región</p>
           <br>
           <br>
@@ -289,7 +296,7 @@
       </div>
       <div class="row">
         <div class="col">
-          <div style="display: flex; width: 100%;">
+          <div style="display: flex; width: 100%;" class="card-list">
             <div class="award" style="background: black;">
               <img src="img/logo/awards/bidpng.png" alt="">
               <p>El modelo de educación tecnológica más innovador</p>
@@ -338,7 +345,7 @@
           <h6>Sitio</h6>
           <ul>
             <li><a href="">Inicio</a></li>
-            <li><a href="">¿Qué es devf?</a></li>
+            <li><a href="">¿Qué es dev.f?</a></li>
             <li><a href="">Equipo</a></li>
             <li><a href="">Aviso de privacidad</a></li>
             <li><a href="">Términos y condiciones</a></li>
@@ -358,11 +365,15 @@
           Av. Álvaro Obregón 168, Roma Norte, C.P. 06700, Ciudad de México. Tel. 55 3670 1339
         </p>
         <p>
-          Dev.f ofrece una solución innovadora a la inclusión educativa con programas EdTech que ayudan a las personas a convertirse en desarrolladores de software y a obtener habilidades tecnológicas para así conseguir oportunidades laborales de alta calidad de manera ágil y accesible.
+          dev.f ofrece una solución innovadora a la inclusión educativa con programas EdTech que ayudan a las personas a convertirse en desarrolladores de software y a obtener habilidades tecnológicas para así conseguir oportunidades laborales de alta calidad de manera ágil y accesible.
         </p>
       </div>
     </div>
   </footer>
   
+  <script>
+    feather.replace()
+  </script>
+
 </body>
 </html>
